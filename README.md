@@ -23,14 +23,24 @@ A unified C++ toolkit for YOLO `v5/v8/v11/v26/...`, covering `classification/det
 ### basics
 1. C++ >= 17
 2. OpenCV == 4.13
-3. Cuda/ONNXRuntime/TensorRT/OpenVINO/RKNN/... are optional
+3. CUDA/ONNXRuntime/TensorRT/OpenVINO/RKNN/... are optional
 
 ### build
 1. run `git clone https://github.com/sherlockchou86/one-yolo.git`
 2. run `cd one-yolo && mkdir build && cd build`
-3. run `cmake .. && make -j8` or click `debug` button directly if you have opened the project using VS Code
+3. run `cmake .. && make -j8` or click `debug` button to run samples directly if you have opened the project using VS Code
 
-> you must put test models and test images/video at the same directory as one-yolo first.
+> you must put test data(models&video&images) at the same directory as one-yolo first before runing the samples.
+
+```
+build options when run cmake command:
+-DBUILD_WITH_ORT=ON   # enable ONNXRuntime as inference backend
+-DBUILD_WITH_OVN=ON   # enable OpenVINO as inference backend
+-DBUILD_WITH_TRT=ON   # enable TensorRT as inference backend
+-DBUILD_WITH_RKN=ON   # enable RKNN as inference backend
+
+if you just run `cmake ..` without any options, one-yolo will depend on OpenCV::DNN module as inference backend (OpenCV is required, CUDA is optional when building OpenCV from source). 
+```
 
 ### hello one-yolo
 
