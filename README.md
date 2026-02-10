@@ -110,6 +110,10 @@ int main() {
     }
 }
 ```
+### demo video
+result of vehicle detection & tracking using yolov8s:
+
+https://github.com/user-attachments/assets/d8b0b711-8922-41f8-8ec7-d1cea1f48afc
 
 ## references
 
