@@ -35,7 +35,7 @@ A unified C++ toolkit for YOLO `v5/v8/v11/v26/...`, covering `classification/det
 ### hello one-yolo
 
 vehicle detection & tracking task using `yolov8s`:
-```
+```c++
 #include "Yolo.h"
 #include "track/YoloTracker.h"
 using namespace yolo;
