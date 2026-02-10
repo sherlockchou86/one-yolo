@@ -1,5 +1,5 @@
 <p style="" align="center">
-  <img src="./docs/logo.png" alt="Logo" width="75%">
+  <img src="./docs/logo.png" alt="Logo" width="85%">
 </p>
 <p style="margin:0px;color:gray" align="center">
 [Make All In One, Make All Easy.]
@@ -8,7 +8,7 @@
 # one-yolo
 A unified C++ toolkit for YOLO `v5/v8/v11/v26/...`, covering `classification/detection/segmentation/pose/obb` tasks with easy python-like APIs from `ultralytics/ultralytics`.
 <p style="" align="center">
-  <img src="./docs/showcase.png" alt="Logo" width="75%">
+  <img src="./docs/showcase.png" alt="Logo" width="85%">
 </p>
 
 ## highlight
