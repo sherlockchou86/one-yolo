@@ -39,3 +39,24 @@
 
 # debug information files
 *.dwo
+
+# models & video
+*.cfg
+*.onnx
+*.caffemodel
+*.prototxt
+*.weights
+*.trt
+*.mp4
+*.h264
+
+# ignore folders
+models/
+images/
+log/
+debug/
+build/
+
+# ignore files
+/test*.cpp
+/tool*.py
