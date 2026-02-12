@@ -60,3 +60,4 @@ build/
 # ignore files
 /test*.cpp
 /tool*.py
+/note.txt

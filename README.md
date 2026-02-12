@@ -2,7 +2,7 @@
   <img src="./docs/logo.png" alt="Logo" width="85%">
 </p>
 <p style="margin:0px;color:gray" align="center">
-[Make All In One, Make All Easy.]
+[ All Yolo Tasks. All Yolo Versions. All Yolo Runtimes. ]
 </p>
 
 # one-yolo
@@ -14,7 +14,7 @@ A unified C++ toolkit for YOLO `v5/v8/v11/v26/...`, covering `classification/det
 ## highlight
 1. support all `Yolo` tasks including `classification`/`detection`/`segmentation`/`pose`/`obb`.
 2. support all `Yolo` versions including `yolov5(anchor-based)`/`yolov5u(anchor-free)`/`yolov8`/`yolov11`/`yolov26(nms-free)`/`more in the future`, sub versions like `n/s/m/l/x` are also supported.
-3. support different inference backends such as `opencv::dnn`/`onnxruntime`/`tensorrt`/`openvino`/...
+3. support all `Yolo` inference backends(runtime) such as `opencv::dnn`/`onnxruntime`/`tensorrt`/`openvino`/`rknn`...
 4. easy APIs to use and integrate, as simple as python APIs from `ultralytics/ultralytics` library.
 5. toolkit works out of box, provide the model and set up the config parameters, go predict!
 
@@ -125,12 +125,138 @@ int main() {
 }
 ```
 ### demo video
-result of vehicle detection & tracking using yolov8s:
+video result of vehicle detection & tracking using yolov8s:
 
 https://github.com/user-attachments/assets/d8b0b711-8922-41f8-8ec7-d1cea1f48afc
 
+### demo output
+json/csv output result of vechile detection & tracking using yolov8s:
+```
+json output:
+[
+    {
+        "box": {
+            "height": 76,
+            "width": 33,
+            "x": 368,
+            "y": 378
+        },
+        "cls_id": 4,
+        "conf": 0.8655326962471008,
+        "label": "2wheel",
+        "track_id": 1
+    },
+    {
+        "box": {
+            "height": 21,
+            "width": 10,
+            "x": 647,
+            "y": 145
+        },
+        "cls_id": 4,
+        "conf": 0.8104556202888489,
+        "label": "2wheel",
+        "track_id": 37
+    },
+    {
+        "box": {
+            "height": 15,
+            "width": 9,
+            "x": 676,
+            "y": 137
+        },
+        "cls_id": 4,
+        "conf": 0.7772445678710938,
+        "label": "2wheel",
+        "track_id": 23
+    },
+    {
+        "box": {
+            "height": 14,
+            "width": 7,
+            "x": 710,
+            "y": 118
+        },
+        "cls_id": 4,
+        "conf": 0.523908257484436,
+        "label": "2wheel",
+        "track_id": 41
+    },
+    {
+        "box": {
+            "height": 14,
+            "width": 12,
+            "x": 793,
+            "y": 93
+        },
+        "cls_id": 3,
+        "conf": 0.5332302451133728,
+        "label": "truck",
+        "track_id": 44
+    },
+    {
+        "box": {
+            "height": 128,
+            "width": 113,
+            "x": 494,
+            "y": 369
+        },
+        "cls_id": 1,
+        "conf": 0.9514954090118408,
+        "label": "car",
+        "track_id": 5
+    },
+    {
+        "box": {
+            "height": 9,
+            "width": 13,
+            "x": 721,
+            "y": 117
+        },
+        "cls_id": 1,
+        "conf": 0.7941694259643555,
+        "label": "car",
+        "track_id": 25
+    },
+    {
+        "box": {
+            "height": 9,
+            "width": 14,
+            "x": 753,
+            "y": 116
+        },
+        "cls_id": 1,
+        "conf": 0.7911720871925354,
+        "label": "car",
+        "track_id": 13
+    },
+    {
+        "box": {
+            "height": 11,
+            "width": 13,
+            "x": 770,
+            "y": 107
+        },
+        "cls_id": 1,
+        "conf": 0.5813544988632202,
+        "label": "car",
+        "track_id": 42
+    }
+]
+csv output:
+id,cls_id,conf,label,track_id
+1,4,0.865533,2wheel,1
+2,4,0.810456,2wheel,37
+3,4,0.777245,2wheel,23
+4,4,0.523908,2wheel,41
+5,3,0.53323,truck,44
+6,1,0.951495,car,5
+7,1,0.794169,car,25
+8,1,0.791172,car,13
+9,1,0.581354,car,42
+```
 ## references
-
+wait for update
 1. docs
 2. samples
 3. to-do
