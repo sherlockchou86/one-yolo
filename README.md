@@ -2,7 +2,7 @@
   <img src="./docs/logo.png" alt="Logo" width="85%">
 </p>
 <p style="margin:0px;color:gray" align="center">
-[ All Yolo Tasks. All Yolo Versions. All Yolo Runtimes. ]
+[🚀All Yolo Tasks. 🚀All Yolo Versions. 🚀All Yolo Runtimes.]
 </p>
 
 # one-yolo
