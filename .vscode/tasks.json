@@ -3,7 +3,7 @@
         {
             "type": "cppbuild",
             "label": "build one-yolo project",
-            "command": "cmake -DBUILD_WITH_ORT=ON .. && make -j8",
+            "command": "cmake -DBUILD_WITH_ORT=ON -DBUILD_WITH_OVN=ON .. && make -j8",
             "args": [
             ],
             "options": {
