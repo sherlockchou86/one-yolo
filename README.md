@@ -14,7 +14,7 @@ A unified C++ toolkit for YOLO `v5/v8/v11/v26/...`, covering `classification/det
 ## highlight
 1. support all `Yolo` tasks including `classification`/`detection`/`segmentation`/`pose`/`obb`.
 2. support all `Yolo` versions including `yolov5(anchor-based)`/`yolov5u(anchor-free)`/`yolov8`/`yolov11`/`yolov26(nms-free)`/`more in the future`, sub versions like `n/s/m/l/x` are also supported.
-3. support all `Yolo` inference backends(runtime) such as `opencv::dnn`/`onnxruntime`/`tensorrt`/`openvino`/`rknn`...
+3. support all `Yolo` inference backends(runtime) such as `OpenCV::DNN`/`ONNXRuntime`/`TensorRT`/`OpenVINO`/`RKNN`/`CoreML`/`CANN`/`PaddlePaddle`...
 4. easy APIs to use and integrate, as simple as python APIs from `ultralytics/ultralytics` library.
 5. toolkit works out of box, provide the model and set up the config parameters, go predict!
 
@@ -39,6 +39,9 @@ build options when run cmake command:
 -DBUILD_WITH_OVN=ON   # enable OpenVINO as inference backend
 -DBUILD_WITH_TRT=ON   # enable TensorRT as inference backend
 -DBUILD_WITH_RKN=ON   # enable RKNN as inference backend
+-DBUILD_WITH_CML=ON   # enable CoreML as inference backend
+-DBUILD_WITH_PDL=ON   # enable PaddlePaddle as inference backend
+-DBUILD_WITH_CAN=ON   # enable CANN as inference backend
 ...
 
 if you just run `cmake ..` without any options, 
